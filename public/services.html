@@ -13,10 +13,10 @@
 <body>
 
     <!-- Navigation -->
-    <header>
+    <header class="navbar">
         <div class="container nav-container">
             <a href="./index.html" class="logo">
-                <img src="./assets/images/bbs_logo.png" alt="BBS Logo" style="height: 75px; width: auto; object-fit: contain;">
+                <img src="./assets/images/bbs_logo.png" alt="BBS Logo" style="height: 60px; width: auto; object-fit: contain;">
             </a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
@@ -27,200 +27,136 @@
                 <li><a href="./why-us.html">Why Us</a></li>
                 <li><a href="./resources.html">Resources</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="https://wa.me/6799086990" class="btn btn-primary" style="padding: 8px 20px; color: white;">WhatsApp Us</a></li>
+                <li><a href="https://wa.me/6799086990" class="nav-cta-button">WhatsApp Us</a></li>
             </ul>
         </div>
     </header>
 
     <!-- Page Header -->
-    <section class="bg-light text-center" style="padding: 100px 0 60px;">
+    <section class="bg-white text-center" style="padding: 100px 0 60px;">
         <div class="container">
-            <h1 class="text-primary">Our Services</h1>
-            <p style="font-size: 20px; max-width: 600px; margin: 0 auto;">Transparent pricing. Clear timelines. Real results.</p>
+            <h1 style="color: var(--fiji-gold);">Our Services</h1>
+            <p style="font-size: 20px; max-width: 600px; margin: 0 auto; color: var(--text-light);">Transparent pricing. Clear timelines. Real results.</p>
         </div>
     </section>
 
-    <!-- Service Detail Sections -->
-    <section class="bg-white">
+    <!-- Service Blocks -->
+    <section class="bg-white" style="padding-top: 0;">
         <div class="container">
             
-            <!-- Service 1: Cash Flow -->
-            <div class="service-detail-row">
-                <div class="service-image bg-light" style="display: flex; align-items: center; justify-content: center; min-height: 300px; padding: 2rem;">
-                    <i class="fas fa-chart-line text-primary" style="font-size: 100px;"></i>
+            <div class="service-block">
+                <h3 class="service-title"><i class="fas fa-chart-line text-primary"></i> Cash Flow Statements</h3>
+                <p class="service-description">Track every dollar in and out of your business. We create clear, easy-to-read cash flow statements that show you exactly where your money goes. Perfect for planning and avoiding cash crunches.</p>
+                <div style="background: var(--obsidian); padding: 1.5rem; border-radius: var(--radius-button); margin-bottom: 1.5rem; border: 1px solid var(--slate);">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--text-white);"><i class="fas fa-user-check" style="color: #25D366;"></i> Who it's for:</h4>
+                    <p style="margin-bottom: 0; font-size: 14px; color: var(--text-light);">Businesses with seasonal income, multiple revenue streams, or frequent cash shortages.</p>
                 </div>
-                <div class="service-content">
-                    <h2 class="text-primary">Cash Flow Statements</h2>
-                    <p>Track every dollar in and out of your business. We create clear, easy-to-read cash flow statements that show you exactly where your money goes. Perfect for planning and avoiding cash crunches.</p>
-                    
-                    <div style="background: var(--neutral-light); padding: 1.5rem; border-radius: var(--radius-button); margin-bottom: 1.5rem;">
-                        <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-user-check text-success"></i> Who it's for:</h4>
-                        <p style="margin-bottom: 0; font-size: 14px;">Businesses with seasonal income, multiple revenue streams, or frequent cash shortages.</p>
-                    </div>
-
-                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                        <span class="price-badge"><i class="fas fa-tag"></i> $150 - $300</span>
-                        <span class="price-badge" style="background: rgba(44, 62, 80, 0.1); color: var(--text-primary);"><i class="fas fa-clock"></i> 5-7 days</span>
-                    </div>
-
-                    <a href="https://wa.me/6799086990?text=I'm%20interested%20in%20Cash%20Flow%20Statements" class="btn btn-primary" style="margin-bottom: 2rem;">Request Quote</a>
-
-                    <div class="faq-container">
-                        <div class="faq-item">
-                            <div class="faq-question">What information do I need to provide? <i class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Your bank statements, receipts, and invoices for the period you want analyzed.</div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">How often should I get this done? <i class="fas fa-chevron-down"></i></div>
-                            <div class="faq-answer">Monthly for active businesses, quarterly for smaller operations.</div>
-                        </div>
-                    </div>
+                <div class="service-meta" style="margin-bottom: 1.5rem;">
+                    <span class="service-price"><i class="fas fa-tag"></i> $150 - $300</span>
+                    <span><i class="fas fa-clock"></i> 5-7 days</span>
                 </div>
+                <a href="https://wa.me/6799086990?text=I'm%20interested%20in%20Cash%20Flow%20Statements" class="btn-primary-gold" style="padding: 12px 24px; font-size: 16px;">Request Quote</a>
             </div>
 
-            <hr style="border: 0; border-top: 1px solid #eee; margin: 4rem 0;">
-
-            <!-- Service 2: Business Plans -->
-            <div class="service-detail-row">
-                <div class="service-image bg-light" style="display: flex; align-items: center; justify-content: center; min-height: 300px; padding: 2rem;">
-                    <i class="fas fa-file-alt text-primary" style="font-size: 100px;"></i>
+            <div class="service-block">
+                <h3 class="service-title"><i class="fas fa-file-alt text-primary"></i> Business Plans</h3>
+                <p class="service-description">Need funding or a clear roadmap? We write professional business plans that banks and investors actually read. Includes financial projections, market analysis, and growth strategies tailored to rural Fiji.</p>
+                <div style="background: var(--obsidian); padding: 1.5rem; border-radius: var(--radius-button); margin-bottom: 1.5rem; border: 1px solid var(--slate);">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--text-white);"><i class="fas fa-user-check" style="color: #25D366;"></i> Who it's for:</h4>
+                    <p style="margin-bottom: 0; font-size: 14px; color: var(--text-light);">New businesses seeking loans, expanding operations, or applying for grants.</p>
                 </div>
-                <div class="service-content">
-                    <h2 class="text-primary">Business Plans</h2>
-                    <p>Need funding or a clear roadmap? We write professional business plans that banks and investors actually read. Includes financial projections, market analysis, and growth strategies tailored to rural Fiji.</p>
-                    
-                    <div style="background: var(--neutral-light); padding: 1.5rem; border-radius: var(--radius-button); margin-bottom: 1.5rem;">
-                        <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-user-check text-success"></i> Who it's for:</h4>
-                        <p style="margin-bottom: 0; font-size: 14px;">New businesses seeking loans, expanding operations, or applying for grants.</p>
-                    </div>
-
-                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                        <span class="price-badge"><i class="fas fa-tag"></i> $400 - $800</span>
-                        <span class="price-badge" style="background: rgba(44, 62, 80, 0.1); color: var(--text-primary);"><i class="fas fa-clock"></i> 2-3 weeks</span>
-                    </div>
-
-                    <a href="https://wa.me/6799086990?text=I'm%20interested%20in%20Business%20Plans" class="btn btn-primary">Request Quote</a>
+                <div class="service-meta" style="margin-bottom: 1.5rem;">
+                    <span class="service-price"><i class="fas fa-tag"></i> $400 - $800</span>
+                    <span><i class="fas fa-clock"></i> 2-3 weeks</span>
                 </div>
+                <a href="https://wa.me/6799086990?text=I'm%20interested%20in%20Business%20Plans" class="btn-primary-gold" style="padding: 12px 24px; font-size: 16px;">Request Quote</a>
             </div>
 
-            <hr style="border: 0; border-top: 1px solid #eee; margin: 4rem 0;">
-
-            <!-- Service 3: Financial Accounts -->
-            <div class="service-detail-row">
-                <div class="service-image bg-light" style="display: flex; align-items: center; justify-content: center; min-height: 300px; padding: 2rem;">
-                    <i class="fas fa-book text-primary" style="font-size: 100px;"></i>
+            <div class="service-block">
+                <h3 class="service-title"><i class="fas fa-book text-primary"></i> Financial Accounts</h3>
+                <p class="service-description">Keep your books clean and audit-ready. We manage your income, expenses, payroll, and inventory tracking. Get monthly reports that actually make sense.</p>
+                <div style="background: var(--obsidian); padding: 1.5rem; border-radius: var(--radius-button); margin-bottom: 1.5rem; border: 1px solid var(--slate);">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--text-white);"><i class="fas fa-user-check" style="color: #25D366;"></i> Who it's for:</h4>
+                    <p style="margin-bottom: 0; font-size: 14px; color: var(--text-light);">Established businesses needing ongoing bookkeeping support.</p>
                 </div>
-                <div class="service-content">
-                    <h2 class="text-primary">Financial Accounts</h2>
-                    <p>Keep your books clean and audit-ready. We manage your income, expenses, payroll, and inventory tracking. Get monthly reports that actually make sense.</p>
-                    
-                    <div style="background: var(--neutral-light); padding: 1.5rem; border-radius: var(--radius-button); margin-bottom: 1.5rem;">
-                        <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-user-check text-success"></i> Who it's for:</h4>
-                        <p style="margin-bottom: 0; font-size: 14px;">Established businesses needing ongoing bookkeeping support.</p>
-                    </div>
-
-                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                        <span class="price-badge"><i class="fas fa-tag"></i> $200 - $500/month</span>
-                        <span class="price-badge" style="background: rgba(44, 62, 80, 0.1); color: var(--text-primary);"><i class="fas fa-clock"></i> Monthly reports</span>
-                    </div>
-
-                    <a href="https://wa.me/6799086990?text=I'm%20interested%20in%20Financial%20Accounts" class="btn btn-primary">Request Quote</a>
+                <div class="service-meta" style="margin-bottom: 1.5rem;">
+                    <span class="service-price"><i class="fas fa-tag"></i> $200 - $500/month</span>
+                    <span><i class="fas fa-clock"></i> Monthly reports</span>
                 </div>
+                <a href="https://wa.me/6799086990?text=I'm%20interested%20in%20Financial%20Accounts" class="btn-primary-gold" style="padding: 12px 24px; font-size: 16px;">Request Quote</a>
             </div>
 
-            <hr style="border: 0; border-top: 1px solid #eee; margin: 4rem 0;">
-
-            <!-- Service 4: Tax Compliance -->
-            <div class="service-detail-row">
-                <div class="service-image bg-light" style="display: flex; align-items: center; justify-content: center; min-height: 300px; padding: 2rem;">
-                    <i class="fas fa-file-invoice-dollar text-primary" style="font-size: 100px;"></i>
+            <div class="service-block">
+                <h3 class="service-title"><i class="fas fa-file-invoice-dollar text-primary"></i> Tax Compliance & Filing</h3>
+                <p class="service-description">Never miss a deadline or pay penalties again. We handle VAT, PAYE, income tax, and all FRCS requirements. Maximize deductions while staying 100% compliant.</p>
+                <div style="background: var(--obsidian); padding: 1.5rem; border-radius: var(--radius-button); margin-bottom: 1.5rem; border: 1px solid var(--slate);">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--text-white);"><i class="fas fa-user-check" style="color: #25D366;"></i> Who it's for:</h4>
+                    <p style="margin-bottom: 0; font-size: 14px; color: var(--text-light);">All registered businesses in Fiji.</p>
                 </div>
-                <div class="service-content">
-                    <h2 class="text-primary">Tax Compliance & Filing</h2>
-                    <p>Never miss a deadline or pay penalties again. We handle VAT, PAYE, income tax, and all FRCS requirements. Maximize deductions while staying 100% compliant.</p>
-                    
-                    <div style="background: var(--neutral-light); padding: 1.5rem; border-radius: var(--radius-button); margin-bottom: 1.5rem;">
-                        <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-user-check text-success"></i> Who it's for:</h4>
-                        <p style="margin-bottom: 0; font-size: 14px;">All registered businesses in Fiji.</p>
-                    </div>
-
-                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                        <span class="price-badge"><i class="fas fa-tag"></i> $250 - $600</span>
-                        <span class="price-badge" style="background: rgba(44, 62, 80, 0.1); color: var(--text-primary);"><i class="fas fa-clock"></i> Before FRCS deadlines</span>
-                    </div>
-
-                    <a href="https://wa.me/6799086990?text=I'm%20interested%20in%20Tax%20Compliance" class="btn btn-primary">Request Quote</a>
+                <div class="service-meta" style="margin-bottom: 1.5rem;">
+                    <span class="service-price"><i class="fas fa-tag"></i> $250 - $600</span>
+                    <span><i class="fas fa-clock"></i> Before FRCS deadlines</span>
                 </div>
+                <a href="https://wa.me/6799086990?text=I'm%20interested%20in%20Tax%20Compliance" class="btn-primary-gold" style="padding: 12px 24px; font-size: 16px;">Request Quote</a>
             </div>
 
-            <hr style="border: 0; border-top: 1px solid #eee; margin: 4rem 0;">
-
-            <!-- Service 5: Training -->
-            <div class="service-detail-row">
-                <div class="service-image bg-light" style="display: flex; align-items: center; justify-content: center; min-height: 300px; padding: 2rem;">
-                    <i class="fas fa-chalkboard-teacher text-primary" style="font-size: 100px;"></i>
+            <div class="service-block">
+                <h3 class="service-title"><i class="fas fa-chalkboard-teacher text-primary"></i> Training & Advice</h3>
+                <p class="service-description">Learn to manage your own finances with confidence. One-on-one training sessions covering basic bookkeeping, QuickBooks, cash management, and financial planning.</p>
+                <div style="background: var(--obsidian); padding: 1.5rem; border-radius: var(--radius-button); margin-bottom: 1.5rem; border: 1px solid var(--slate);">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--text-white);"><i class="fas fa-user-check" style="color: #25D366;"></i> Who it's for:</h4>
+                    <p style="margin-bottom: 0; font-size: 14px; color: var(--text-light);">New business owners wanting to DIY their books.</p>
                 </div>
-                <div class="service-content">
-                    <h2 class="text-primary">Training & Advice</h2>
-                    <p>Learn to manage your own finances with confidence. One-on-one training sessions covering basic bookkeeping, QuickBooks, cash management, and financial planning.</p>
-                    
-                    <div style="background: var(--neutral-light); padding: 1.5rem; border-radius: var(--radius-button); margin-bottom: 1.5rem;">
-                        <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-user-check text-success"></i> Who it's for:</h4>
-                        <p style="margin-bottom: 0; font-size: 14px;">New business owners wanting to DIY their books.</p>
-                    </div>
-
-                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                        <span class="price-badge"><i class="fas fa-tag"></i> $80 - $150/session</span>
-                        <span class="price-badge" style="background: rgba(44, 62, 80, 0.1); color: var(--text-primary);"><i class="fas fa-clock"></i> Flexible scheduling</span>
-                    </div>
-
-                    <a href="https://wa.me/6799086990?text=I'm%20interested%20in%20Training%20sessions" class="btn btn-primary">Request Quote</a>
+                <div class="service-meta" style="margin-bottom: 1.5rem;">
+                    <span class="service-price"><i class="fas fa-tag"></i> $80 - $150/session</span>
+                    <span><i class="fas fa-clock"></i> Flexible scheduling</span>
                 </div>
+                <a href="https://wa.me/6799086990?text=I'm%20interested%20in%20Training%20sessions" class="btn-primary-gold" style="padding: 12px 24px; font-size: 16px;">Request Quote</a>
             </div>
 
         </div>
     </section>
 
     <!-- Packages Section -->
-    <section class="bg-primary" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    <section class="bg-light">
         <div class="container">
             <h2 class="text-white text-center" style="margin-bottom: 3rem;">Save with Our Packages</h2>
             <div class="grid grid-3">
-                <div class="card" style="border: 2px solid transparent;">
+                <div class="card" style="border: 1px solid var(--slate);">
                     <h3 class="text-primary text-center">Startup Essentials</h3>
                     <ul style="list-style: none; padding: 0; margin: 1.5rem 0; flex-grow: 1;">
-                        <li style="margin-bottom: 10px;"><i class="fas fa-check text-success" style="margin-right: 10px;"></i> Business Plan</li>
-                        <li style="margin-bottom: 10px;"><i class="fas fa-check text-success" style="margin-right: 10px;"></i> First Year Tax Filing</li>
+                        <li style="margin-bottom: 10px; color: var(--text-light);"><i class="fas fa-check" style="color: #25D366; margin-right: 10px;"></i> Business Plan</li>
+                        <li style="margin-bottom: 10px; color: var(--text-light);"><i class="fas fa-check" style="color: #25D366; margin-right: 10px;"></i> First Year Tax Filing</li>
                     </ul>
                     <div class="text-center" style="margin-bottom: 1.5rem;">
-                        <div style="font-size: 32px; font-weight: bold; color: var(--text-primary);">$600</div>
-                        <div style="color: var(--success); font-size: 14px; font-weight: bold;">Save $100</div>
+                        <div style="font-size: 32px; font-weight: bold; color: var(--text-white);">$600</div>
+                        <div style="color: #25D366; font-size: 14px; font-weight: bold;">Save $100</div>
                     </div>
-                    <a href="https://wa.me/6799086990" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                    <a href="https://wa.me/6799086990" class="btn btn-secondary" style="width: 100%;">Get Started</a>
                 </div>
 
-                <div class="card" style="border: 2px solid var(--secondary); transform: scale(1.05); z-index: 1;">
-                    <div style="background: var(--secondary); color: white; text-align: center; padding: 5px; font-size: 12px; font-weight: bold; border-radius: 4px; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap;">MOST POPULAR</div>
+                <div class="card" style="border: 2px solid var(--fiji-gold); transform: scale(1.05); z-index: 1;">
+                    <div style="background: var(--fiji-gold); color: #1A1A1A; text-align: center; padding: 5px; font-size: 12px; font-weight: bold; border-radius: 4px; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap;">MOST POPULAR</div>
                     <h3 class="text-primary text-center">Monthly Basics</h3>
                     <ul style="list-style: none; padding: 0; margin: 1.5rem 0; flex-grow: 1;">
-                        <li style="margin-bottom: 10px;"><i class="fas fa-check text-success" style="margin-right: 10px;"></i> Financial Accounts</li>
-                        <li style="margin-bottom: 10px;"><i class="fas fa-check text-success" style="margin-right: 10px;"></i> Tax Compliance</li>
+                        <li style="margin-bottom: 10px; color: var(--text-light);"><i class="fas fa-check" style="color: #25D366; margin-right: 10px;"></i> Financial Accounts</li>
+                        <li style="margin-bottom: 10px; color: var(--text-light);"><i class="fas fa-check" style="color: #25D366; margin-right: 10px;"></i> Tax Compliance</li>
                     </ul>
                     <div class="text-center" style="margin-bottom: 1.5rem;">
-                        <div style="font-size: 32px; font-weight: bold; color: var(--text-primary);">$400 <span style="font-size: 16px; font-weight: normal; color: var(--text-secondary);">/mo</span></div>
-                        <div style="color: var(--success); font-size: 14px; font-weight: bold;">Save $50/month</div>
+                        <div style="font-size: 32px; font-weight: bold; color: var(--text-white);">$400 <span style="font-size: 16px; font-weight: normal; color: var(--text-muted);">/mo</span></div>
+                        <div style="color: #25D366; font-size: 14px; font-weight: bold;">Save $50/month</div>
                     </div>
-                    <a href="https://wa.me/6799086990" class="btn btn-primary" style="width: 100%;">Sign Up</a>
+                    <a href="https://wa.me/6799086990" class="btn-primary-gold" style="width: 100%; text-align: center;">Sign Up</a>
                 </div>
 
-                <div class="card" style="border: 2px solid transparent;">
+                <div class="card" style="border: 1px solid var(--slate);">
                     <h3 class="text-primary text-center">Full Service</h3>
                     <ul style="list-style: none; padding: 0; margin: 1.5rem 0; flex-grow: 1;">
-                        <li style="margin-bottom: 10px;"><i class="fas fa-check text-success" style="margin-right: 10px;"></i> Everything included</li>
-                        <li style="margin-bottom: 10px;"><i class="fas fa-check text-success" style="margin-right: 10px;"></i> Training sessions</li>
+                        <li style="margin-bottom: 10px; color: var(--text-light);"><i class="fas fa-check" style="color: #25D366; margin-right: 10px;"></i> Everything included</li>
+                        <li style="margin-bottom: 10px; color: var(--text-light);"><i class="fas fa-check" style="color: #25D366; margin-right: 10px;"></i> Training sessions</li>
                     </ul>
                     <div class="text-center" style="margin-bottom: 1.5rem;">
-                        <div style="font-size: 24px; font-weight: bold; color: var(--text-primary); margin-top: 10px;">Custom Quote</div>
+                        <div style="font-size: 24px; font-weight: bold; color: var(--text-white); margin-top: 10px;">Custom Quote</div>
                     </div>
                     <a href="./contact.html" class="btn btn-secondary" style="width: 100%;">Contact Us</a>
                 </div>
@@ -229,31 +165,31 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo" style="margin-bottom: 1rem;">
-                        <img src="./assets/images/bbs_logo.png" alt="BBS Logo" style="height: 100px; width: auto; object-fit: contain; background-color: var(--neutral-light); padding: 8px; border-radius: 8px;">
+                        <img src="./assets/images/bbs_logo.png" alt="BBS Logo" class="footer-logo" style="height: 60px; width: auto; object-fit: contain;">
                     </div>
                     <p style="margin-bottom: 0.5rem;">Professional and affordable support for rural businesses.</p>
                     <p>Servicing Savusavu, Wallevu East, and surrounding villages.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
+                    <h4 class="footer-heading">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./services.html">Services</a></li>
-                        <li><a href="./why-us.html">Why Us</a></li>
-                        <li><a href="./resources.html">Resources</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./index.html" class="footer-link">Home</a></li>
+                        <li><a href="./services.html" class="footer-link">Services</a></li>
+                        <li><a href="./why-us.html" class="footer-link">Why Us</a></li>
+                        <li><a href="./resources.html" class="footer-link">Resources</a></li>
+                        <li><a href="./contact.html" class="footer-link">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact Us</h4>
+                    <h4 class="footer-heading">Contact Us</h4>
                     <ul class="footer-links">
-                        <li><i class="fas fa-phone" style="width: 20px;"></i> <a href="tel:+6799086990">9086990</a></li>
-                        <li><i class="fas fa-envelope" style="width: 20px;"></i> <a href="mailto:bukaroroadriu@gmail.com">bukaroroadriu@gmail.com</a></li>
+                        <li><i class="fas fa-phone" style="width: 20px;"></i> <a href="tel:+6799086990" class="footer-link">9086990</a></li>
+                        <li><i class="fas fa-envelope" style="width: 20px;"></i> <a href="mailto:bukaroroadriu@gmail.com" class="footer-link">bukaroroadriu@gmail.com</a></li>
                         <li><i class="fas fa-map-marker-alt" style="width: 20px;"></i> Nabalebale Village, Wallevu East</li>
                     </ul>
                     <div class="footer-social">
@@ -269,7 +205,7 @@
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/6799086990?text=Hi%20BBS%2C%20I%27m%20interested%20in%20learning%20more%20about%20your%20bookkeeping%20services." class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/6799086990?text=Hi%20BBS%2C%20I%27m%20interested%20in%20learning%20more%20about%20your%20bookkeeping%20services." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
