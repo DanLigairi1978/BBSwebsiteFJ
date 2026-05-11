@@ -1155,17 +1155,11 @@ input:focus-visible {
   display: flex;
   align-items: center;
   padding: 120px 20px 80px;
-  background: url('https://www.shutterstock.com/image-illustration/web-contact-us-internet-connection-260nw-284271641.jpg') center/cover no-repeat;
+  background: url('./../assets/images/contact-hero.png') center/cover no-repeat;
   border-bottom: 2px solid var(--accent-gold);
 }
 
-.contact-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--hero-overlay); /* Uses the theme variable */
-  z-index: 1;
-}
+/* NO OVERLAY as requested */
 
 .contact-hero-content {
   position: relative;
