@@ -608,13 +608,13 @@ section {
 }
 
 .footer-logo {
-  height: 60px;
+  height: 90px;
   width: auto;
   margin-bottom: 20px;
   object-fit: contain;
 
   /* Enhance visibility on dark footer */
-  filter: brightness(1.1) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
   opacity: 0.95;
 }
 
@@ -638,39 +638,34 @@ section {
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
 
-  /* Remove any white artifacts on dark background */
-  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.1));
-  mix-blend-mode: screen;
-  /* Optional depending on artifacts */
-
   /* Responsive sizing */
   max-width: 100%;
   height: auto;
-  min-height: 40px;
-  max-height: 48px;
+  min-height: 50px;
+  max-height: 64px;
 }
 
 @media (max-width: 768px) {
   .logo-img {
-    height: 40px;
+    height: 50px;
   }
 }
 
 @media (max-width: 374px) {
   .logo-img {
-    max-height: 36px;
+    max-height: 44px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .logo-img {
-    height: 44px;
+    height: 56px;
   }
 }
 
 @media (min-width: 1400px) {
   .logo-img {
-    height: 52px;
+    height: 72px;
   }
 }
 
@@ -1077,10 +1072,7 @@ textarea.form-control {
   background: #25D366;
 }
 
-/* Logo - Light Mode (if needed) */
-:root[data-theme="light"] .footer-logo {
-  filter: brightness(0.9);
-}
+/* Logo - Light Mode (handled by invert filter at end of file) */
 
 /* Form Elements - Light Mode */
 :root[data-theme="light"] input,
@@ -1125,4 +1117,22 @@ a:focus-visible,
 input:focus-visible {
   outline: 3px solid var(--accent-gold);
   outline-offset: 2px;
+}
+/* ================================
+   NEW LOGO STYLES (White on Transparent)
+   ================================ */
+
+.logo-img, .footer-logo {
+  object-fit: contain;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+:root[data-theme="light"] .logo-img,
+:root[data-theme="light"] .footer-logo {
+  /* Invert white logo to black for light mode */
+  filter: invert(1) brightness(0.8);
+}
+
+.logo-link:hover .logo-img {
+  transform: scale(1.05);
 }
