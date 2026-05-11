@@ -1177,14 +1177,15 @@ input:focus-visible {
 }
 
 .contact-hero-title {
-  color: var(--text-primary);
+  color: #FFFFFF;
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 16px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contact-hero-subtitle {
-  color: var(--text-secondary);
+  color: #FFFFFF;
   font-size: 20px;
   max-width: 600px;
   margin: 0 auto;
@@ -1231,14 +1232,15 @@ input:focus-visible {
 }
 
 .resources-hero-title {
-  color: var(--text-primary);
+  color: #FFFFFF;
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 16px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .resources-hero-subtitle {
-  color: var(--text-secondary);
+  color: #FFFFFF;
   font-size: 20px;
   max-width: 600px;
   margin: 0 auto;
@@ -1262,7 +1264,7 @@ input:focus-visible {
   display: flex;
   align-items: center;
   padding: 120px 20px 80px;
-  background: url('https://modularassets.cdn.ignitetravel.com/modular_multisite/wp-content/uploads/sites/2/2023/01/23125042/FIJI-nadi-handicraft-centre-traditional-souvenirs-my-fiji-580x480-1.jpg') center/cover no-repeat;
+  background: url('./../assets/images/whyus-hero.png') center/cover no-repeat;
   border-bottom: 2px solid var(--accent-gold);
 }
 
@@ -1287,19 +1289,15 @@ input:focus-visible {
 }
 
 .whyus-hero-title {
-  color: var(--text-primary);
+  color: #FFFFFF;
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 16px;
-  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5); /* Helps legibility with reduced overlay */
-}
-
-:root[data-theme="dark"] .whyus-hero-title {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .whyus-hero-subtitle {
-  color: var(--text-secondary);
+  color: #FFFFFF;
   font-size: 20px;
   max-width: 600px;
   margin: 0 auto;
