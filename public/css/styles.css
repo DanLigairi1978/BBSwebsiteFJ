@@ -1195,3 +1195,53 @@ input:focus-visible {
     font-size: 18px;
   }
 }
+
+/* ==========================================================================
+   Resources Hero Section
+   ========================================================================== */
+.resources-hero {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 20px 80px;
+  background: url('./../assets/images/resources-hero.jpg') center/cover no-repeat;
+  border-bottom: 2px solid var(--accent-gold);
+}
+
+.resources-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--hero-overlay); /* Uses the theme variable */
+  z-index: 1;
+}
+
+.resources-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.resources-hero-title {
+  color: var(--text-primary);
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.resources-hero-subtitle {
+  color: var(--text-secondary);
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .resources-hero-title {
+    font-size: 36px;
+  }
+  .resources-hero-subtitle {
+    font-size: 18px;
+  }
+}
