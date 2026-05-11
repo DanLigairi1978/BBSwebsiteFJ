@@ -1168,7 +1168,7 @@ input:focus-visible {
 }
 
 :root[data-theme="light"] .contact-hero::before {
-  background: rgba(255, 255, 255, 0.1); /* 10% white wash in light mode */
+  background: rgba(255, 255, 255, 0.25); /* 25% white wash in light mode */
 }
 .contact-hero-content {
   position: relative;
