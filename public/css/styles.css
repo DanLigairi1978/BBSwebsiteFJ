@@ -513,7 +513,69 @@ section {
 }
 
 .footer-logo {
-  filter: brightness(0) invert(1);  /* Make logo white */
+  height: 60px;
+  width: auto;
+  margin-bottom: 20px;
+  object-fit: contain;
+  
+  /* Enhance visibility on dark footer */
+  filter: brightness(1.1) drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  opacity: 0.95;
+}
+
+/* Navigation Logo */
+.logo-link {
+  display: inline-block;
+  padding: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.85;
+}
+
+.logo-img {
+  width: auto;
+  display: block;
+  object-fit: contain;
+  
+  /* Clean rendering */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  
+  /* Remove any white artifacts on dark background */
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.1));
+  mix-blend-mode: screen; /* Optional depending on artifacts */
+  
+  /* Responsive sizing */
+  max-width: 100%;
+  height: auto;
+  min-height: 40px;
+  max-height: 48px;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 374px) {
+  .logo-img {
+    max-height: 36px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo-img {
+    height: 44px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .logo-img {
+    height: 52px;
+  }
 }
 
 .footer-heading {
