@@ -958,7 +958,6 @@ textarea.form-control {
 
 /* Hero Section - Light Mode */
 :root[data-theme="light"] .hero {
-  background: linear-gradient(135deg, #FFFFFF 0%, #F8F9FA 100%);
   position: relative;
 }
 
