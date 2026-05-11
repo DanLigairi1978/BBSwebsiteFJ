@@ -416,13 +416,23 @@ section {
    Header & Navigation
    ========================================================================== */
 .navbar {
-  background: rgba(26, 26, 26, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(44, 53, 57, 0.75); /* Gunmetal grey at 75% opacity */
+  backdrop-filter: blur(0px); /* Crisp when at top */
+  -webkit-backdrop-filter: blur(0px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
   padding: 16px 0;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease, padding 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(44, 53, 57, 0.4); /* Reduced opacity */
+  backdrop-filter: blur(12px); /* Blur effect when scrolled */
+  -webkit-backdrop-filter: blur(12px);
+  padding: 12px 0; /* Slight shrink for sleekness */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .nav-container {
