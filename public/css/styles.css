@@ -1127,7 +1127,6 @@ input:focus-visible {
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-:root[data-theme="light"] .logo-img,
 :root[data-theme="light"] .footer-logo {
   /* Invert white logo to black for light mode */
   filter: invert(1) brightness(0.8);
