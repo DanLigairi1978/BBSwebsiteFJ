@@ -1145,3 +1145,53 @@ input:focus-visible {
 .logo-link:hover .logo-img {
   transform: scale(1.05);
 }
+
+/* ==========================================================================
+   Contact Hero Section
+   ========================================================================== */
+.contact-hero {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 20px 80px;
+  background: url('https://www.shutterstock.com/image-illustration/web-contact-us-internet-connection-260nw-284271641.jpg') center/cover no-repeat;
+  border-bottom: 2px solid var(--accent-gold);
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--hero-overlay); /* Uses the theme variable */
+  z-index: 1;
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.contact-hero-title {
+  color: var(--text-primary);
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.contact-hero-subtitle {
+  color: var(--text-secondary);
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .contact-hero-title {
+    font-size: 36px;
+  }
+  .contact-hero-subtitle {
+    font-size: 18px;
+  }
+}
